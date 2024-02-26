@@ -1,5 +1,5 @@
 stages:
-  - make_assets
+  # - make_assets
   - embed_reveal
   - docusaurus
 
@@ -31,22 +31,32 @@ docusaurus:
     sidebar: js
     structure:
       - Introduction: chapters/landing-page/README.md
-      - Template Chapter:
-          - Template Topic:
-              path: chapters/template-chapter/template-topic/
+      - Lab 1 - Number Representation:
+          - Binary and Hexadecimal:
+              path: chapters/intro-computer-architecture/binary-hex/
               extra:
                 - media/
               subsections:
                 - Reading/: reading/
-                - Drills/: drills/
-                - Guides/: guides/
-                - Slides: /build/embed_reveal/template-chapter-template-topic
-          - Yet Another Topic:
-              path: chapters/template-chapter/yet-another-topic/
+                - Tasks:
+                    path: drills/tasks/
+                    subsections:
+                      - Conversions/: conversions/
+                      - Rotations/: rotations/
+                      - Binary Even and Hexadecimal Odd/: odd-even/
+          - Pointers in C:
+              path: chapters/intro-computer-architecture/c-pointers/
+              extra:
+                - media/
               subsections:
-                - Drills/: drills/
-    static_assets:
-      - template-chapter-template-topic: /build/make_assets/chapters/template-chapter/template-topic/slides/_site
+                - Reading/: reading/
+                - Tasks:
+                    path: drills/tasks/
+                    subsections:
+                      - Length and Equality with Bitwise Operations/: len-xor/
+                      - Mirror/: mirror/
+    # static_assets:
+    #   - template-chapter-template-topic: /build/make_assets/chapters/template-chapter/template-topic/slides/_site
     config_meta:
       title: Hardware Software Interface
       url: http://localhost/
