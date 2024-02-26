@@ -10,7 +10,26 @@
 
 ## Using the Content
 
-TODO
+Content is located in the `chapters/` folder.
+It currently consists of 5 chapters:
+
+- [Memory Layout](chapters/memory-layout/)
+- [Introduction to Computer Architecture](content/intro-computer-architecture/)
+- [Hardware-Software Interface](chapters/hardware-software-interface)
+- [Stack](chapters/stack/)
+- [Memory Security](chapters/memory-security/)
+
+Each chapter has its own folder.
+Content for each chapter is split in subfolders according to each topic:
+Each topic is further split into different kinds of materials that refer to it.
+These may be any collection of the following:
+
+- `reading/`: content to be assimilated by learners on their own
+- `slides/`: content to be aggregated into presentations
+- `drills/`: practical exercises for learners
+- `media/`: images, videos, audio or auxiliary materials to be imported in text content
+- `demos/`: snippets to be presented by educators
+- `guides/`: tutorials for learners with guided steps towards the solution
 
 ## Chapter Contents
 
